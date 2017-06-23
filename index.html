@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia Game | Austin Lee</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+<div id="wrapper"> <h3>Random Trivia Game</h3>
+
+    <div id="fillOut"><h5>Let's see how fast you can fill this out!</h5></div>
+
+		<div id="questionsHeader">
+			 <h4><hr>Questions:<hr></h4>
+		</div>  
+
+    <div id="clockCounting"> </div>    
+	
+    <div id="Questions">
+
+  		  <div id="questionOne">
+    			<p>Which ocean is the deepest in the world?</p>
+    		</div>
+
+        <!--maybe a div for answerOne to identify their value submission/choice in JS--> 
+        <div id="AnswerOne">
+          <!--<form action="firstRadio">-->
+          <input type="radio" name="ocean" value="Atlantic Ocean"> Atlantic Ocean <br>
+          <input type="radio" name="ocean" value="Indian Ocean"> Indian Ocean <br>
+          <input type="radio" name="ocean" value="Pacific Ocean"> Pacific Ocean <br> <!--correct-->
+          <input type="radio" name="ocean" value="Arctic Ocean"> Arctic Ocean
+            <!--</form>-->
+        </div>
+
+    		<br>
+    			
+    		<div id="questionTwo">
+    			 <p>Where is the highest point of the Earth's crust?</p>
+    		</div>
+
+        <!--maybe a div for answerTwo to identify their value submission/choice in JS--> 
+        <div id="AnswerTwo"> 
+          <form action="secondRadio">
+          <input type="radio" name="mountain" value="Mt. Everest"> Mt. Everest <br> <!--correct-->
+          <input type="radio" name="mountain" value="Mt. Shasta"> Mt. Shasta <br>
+          <input type="radio" name="mountain" value="Mt. Morty"> Mt. Morty <br>
+          <input type="radio" name="mountain" value="Mt. Schwifty"> Mt. Schwifty
+        </form>
+        </div>
+    			
+    		<br>
+    			
+    		<div id="questionThree">
+    			<p>Where is the lowest point of the Earth's crust?</p>
+    		</div>
+    
+        <!--maybe a div for answerThree to identify their value submission/choice in JS--> 
+        <div id="AnswerThree">
+          <form action="thirdRadio">
+          <input type="radio" name="ditch" value="Death Valley"> Death Valley <br>
+          <input type="radio" name="ditch" value="Mariana Trench"> Mariana Trench <br> <!--correct-->
+          <input type="radio" name="ditch" value="Florida"> Florida <br>
+          <input type="radio" name="ditch" value="Trump's Inauguration"> Trump's Inauguration
+          </form>
+        </div>
+    			
+    		<br>
+    		
+    		<div id="questionFour">	
+    			<p>How many protons are in hydrogen's most common isotope?</p>
+    		</div>
+
+        <!--maybe a div for answerFour to identify their value submission/choice in JS--> 
+        <div id="AnswerFour">
+          <form action="fourthRadio">
+          <input type="radio" name="amount" value= "1"> One proton <br> <!--correct-->
+          <input type="radio" name="amount" value="2"> Two protons <br>
+          <input type="radio" name="amount" value="3"> Three protons <br>
+          <input type="radio" name="amount" value="4"> Four protons
+          </form>
+        </div>
+    			
+    		<br>
+    			
+    		<div id="questionFive">
+    			<p>What is the 6th planet of our solar system, inward to outward?</p>
+    		</div>	
+
+        <!--maybe a div for answerFive to identify their value submission/choice in JS--> 
+        <div id="AnswerFive">
+          <form action="fifthRadio">
+          <input type="radio" name="planet" value= "Uranus"> Uranus <br>
+          <input type="radio" name="planet" value="Neptune"> Neptune <br>
+          <input type="radio" name="planet" value="Saturn"> Saturn <br> <!--correct-->
+          <input type="radio" name="planet" value="Earth"> Earth
+          </form>
+        </div>
+
+        <br>
+
+        <div id="questionSix">
+          <p>What is the matching chemical weight (amu) for sodium phosphate?</p>
+        </div>
+
+        <!--maybe a div for answerSix to identify their value submission/choice in JS--> 
+        <div id="AnswerSix">
+          <form action="sixthRadio">
+          <input type="radio" name="mass" value= "142"> 142 g/mol <br> <!--correct-->
+          <input type="radio" name="mass" value="234"> 234 g/mol <br>
+          <input type="radio" name="mass" value="54.6"> 54.6 g/mol <br>
+          <input type="radio" name="mass" value="38.8"> 38.8 g/mol
+          </form>
+        </div>
+
+        <br>
+        
+        <div id="lookUp"></div>
+
+    </div>
+
+</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	
+	</body>
+</html>
+
+<!--<div id="questionIdArr">--> <!--not sure if necessary, check with Jerome-->
+  <!--questionsArr in  file might be able to identify our unique values per question, each question being an array element-->
+
+<!--you can link all of this to js from your append functions if you don't hard code it-->
+<!--consider the possible option of appending all these questions below $(#id) to your js file-->
+<!--syntax: $(#id).append("<p> some Object.key or array index </p>") -->
